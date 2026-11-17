@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="بلوم كوفي — مقهى ومشروبات، قهوة مختصة وحلويات طازجة في الرياض.">
+  <title>بلوم كوفي | Bloom Coffee</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">B</div>
+        <div class="brand-text"><strong>Bloom</strong><span>Bloom Coffee</span></div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="index.html" data-i18n="nav_home">الرئيسية</a>
+        <a href="menu.html" data-nav="menu.html" data-i18n="nav_menu">القائمة</a>
+        <a href="offers.html" data-nav="offers.html" data-i18n="nav_offers">العروض</a>
+        <a href="about.html" data-nav="about.html" data-i18n="nav_about">من نحن</a>
+        <a href="contact.html" data-nav="contact.html" data-i18n="nav_contact">تواصل معنا</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn lang-btn" data-lang-toggle title="Switch language">EN</button>
+        <button class="icon-btn" id="open-wish" title="Wishlist" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5.2 5.2 0 0 0-7.4 0L12 7l-1.4-1.4a5.2 5.2 0 0 0-7.4 7.4l1.4 1.4L12 21l7.4-6.6 1.4-1.4a5.2 5.2 0 0 0 0-7.4Z"/></svg>
+          <span class="badge" id="wish-badge" style="display:none">0</span>
+        </button>
+        <button class="icon-btn" id="open-cart" title="Cart" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h2.2l2.3 12.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 7H5.2"/></svg>
+          <span class="badge" id="cart-badge" style="display:none">0</span>
+        </button>
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <span class="eyebrow" data-i18n="heroBadge">مقهى الحرفية الجديدة</span>
+        <h1 class="display"><span data-i18n="heroTitleA">لحظتك المثالية</span><span data-i18n="heroTitleB">تبدأ هنا</span></h1>
+        <p data-i18n="heroDesc">قهوة مختصة محمّصة بعناية، ومشروبات ابتكارية، وأجواء دافئة صُممت لتكون فيها لحظتك هادئة ومليئة بالإلهام.</p>
+        <div class="hero-buttons">
+          <a href="menu.html" class="btn btn-accent" data-i18n="heroCta">تصفح قائمة المشروبات</a>
+          <a href="about.html" class="btn btn-light" data-i18n="heroSecondary">تعرف علينا</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-img-wrap">
+          <img src="assets/images/photo-1442512595331-e89e73853f31.jpg" alt="Signature coffee at Bloom">
+        </div>
+        <div class="hero-float one">
+          <div class="fav-bubble">★</div>
+          <div><strong>4.9 / 5</strong><small data-i18n="reviewsTitle">ماذا يقول ضيوفنا</small></div>
+        </div>
+        <div class="hero-float two">
+          <div><div class="stars-mini">★★★★★</div><strong data-i18n="bestSellers">الأكثر طلباً</strong></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shape"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="currentColor" d="M0,40 C240,0 480,0 720,30 C960,60 1200,60 1440,20 L1440,60 L0,60 Z"/></svg></div>
+  </section>
+
+  <!-- ============ BEST SELLERS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="bestSellers">الأكثر طلباً</span>
+        <h2 class="section-title display" data-i18n="bestSellers">الأكثر طلباً</h2>
+        <p class="section-desc" data-i18n="bestDesc">اختيارات يحبها ضيوفنا وتعود إليها مراراً.</p>
+      </div>
+      <div class="grid grid-4" id="best-grid"></div>
+      <div style="text-align:center;margin-top:40px" class="reveal">
+        <a href="menu.html" class="btn btn-outline" data-i18n="viewAll">عرض الكل</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OFFERS ============ -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="offersTitle">عروض لا تُفوّت</span>
+        <h2 class="section-title display" data-i18n="offersTitle">عروض لا تُفوّت</h2>
+        <p class="section-desc" data-i18n="offersDesc">باقات مصممة لتناسب يومك، وتوفر لك أكثر.</p>
+      </div>
+      <div class="grid grid-3" id="home-offers-grid"></div>
+      <div style="text-align:center;margin-top:40px" class="reveal">
+        <a href="offers.html" class="btn btn-primary" data-i18n="viewAll">عرض الكل</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT MINI ============ -->
+  <section class="section tint">
+    <div class="container about-split">
+      <div class="about-images reveal">
+        <img class="main-img" src="assets/images/photo-1554118811-1e0d58224f24.jpg" alt="Bloom Café interior">
+        <img class="small-img" src="assets/images/photo-1445116572660-236099ec97a0.jpg" alt="Coffee preparation">
+      </div>
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="aboutMiniTitle">أكثر من مجرد قهوة</span>
+        <h2 class="section-title display" data-i18n="aboutMiniTitle">أكثر من مجرد قهوة</h2>
+        <p class="section-desc" data-i18n="aboutMiniDesc">في بلوم، نؤمن أن القهوة ليست مشروباً فقط، بل طقس يومي يجمعنا. نختار حبوبنا من أفضل المزارع، ونحضّر كل كوب بشغف وتفاصيل دقيقة.</p>
+        <div class="feature-row">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3c3 3 3 6 0 9-3-3-3-6 0-9ZM5 10c4 1 6 4 5 8-4-1-6-4-5-8Zm14 0c-4 1-6 4-5 8 4-1 6-4 5-8Z"/></svg></div>
+          <div><h4 data-i18n="story2Title">حرفية في كل تفصيل</h4><p data-i18n="aboutMiniDesc">نختار حبوبنا من أفضل المزارع.</p></div>
+        </div>
+        <a href="about.html" class="btn btn-primary" style="margin-top:14px" data-i18n="aboutLink">قصتنا كاملة</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="reviewsTitle">ماذا يقول ضيوفنا</span>
+        <h2 class="section-title display" data-i18n="reviewsTitle">ماذا يقول ضيوفنا</h2>
+        <p class="section-desc" data-i18n="reviewsDesc">كلمات حقيقية من أشخاص جعلوا بلوم جزءاً من يومهم.</p>
+      </div>
+      <div class="grid grid-3" id="reviews-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand"><div class="brand-mark">B</div><div class="brand-text"><strong>Bloom</strong><span data-i18n="brandSub">مقهى ومشروبات</span></div></a>
+          <p data-i18n="footerDesc">قهوة حرفية، مشروبات مبتكرة، ولحظات تستحق أن تُعاش.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://x.com" target="_blank" rel="noopener" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.3l-4.9-6.4L6.1 22H3l7.3-8.3L2 2h6.5l4.4 5.8L18.9 2Zm-1.1 18h1.7L7.5 3.9H5.7L17.8 20Z"/></svg></a>
+            <a href="https://snapchat.com" target="_blank" rel="noopener" aria-label="Snapchat"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c3.5 0 6 2.4 6 5.8 0 .7-.1 1.4-.3 2 .5.3 1 .7 1 1.2 0 .5-.4.8-1 .9-.2 1.2-.9 1.8-1.7 2.3-.6.4-1.2.6-1.7 1.2-.3.4-.5.9-1.1.9H10c-.6 0-.8-.5-1.1-.9-.5-.6-1.1-.8-1.7-1.2-.8-.5-1.5-1.1-1.7-2.3-.6-.1-1-.4-1-.9 0-.5.5-.9 1-1.2-.2-.6-.3-1.3-.3-2C6 4.4 8.5 2 12 2Z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerQuick">روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="menu.html" data-i18n="nav_menu">القائمة</a></li>
+            <li><a href="offers.html" data-i18n="nav_offers">العروض</a></li>
+            <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerContact">تواصل معنا</h4>
+          <ul>
+            <li data-i18n="address">الرياض، المملكة العربية السعودية</li>
+            <li dir="ltr" style="text-align:start">+966 50 123 4567</li>
+            <li dir="ltr" style="text-align:start">hello@bloomcoffee.sa</li>
+            <li data-i18n="hours">يومياً: 7:00 ص – 11:00 م</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerSocial">تابعنا</h4>
+          <p style="color:rgba(253,248,240,.65);font-size:.87rem" data-i18n="footerDesc">قهوة حرفية، مشروبات مبتكرة، ولحظات تستحق أن تُعاش.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Bloom Coffee. <span data-i18n="rights">جميع الحقوق محفوظة.</span></span>
+        <span data-i18n="brandSub">مقهى ومشروبات</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ OVERLAYS ============ -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <div class="mobile-panel">
+      <a href="index.html" class="brand"><div class="brand-mark">B</div><div class="brand-text"><strong>Bloom</strong></div></a>
+      <a class="nav-links-item" href="index.html" data-i18n="nav_home">الرئيسية</a>
+      <a class="nav-links-item" href="menu.html" data-i18n="nav_menu">القائمة</a>
+      <a class="nav-links-item" href="offers.html" data-i18n="nav_offers">العروض</a>
+      <a class="nav-links-item" href="about.html" data-i18n="nav_about">من نحن</a>
+      <a class="nav-links-item" href="contact.html" data-i18n="nav_contact">تواصل معنا</a>
+      <button class="btn btn-primary close-mobile" id="close-mobile" data-i18n="close">إغلاق</button>
+    </div>
+  </div>
+
+  <div class="drawer-root" id="drawer-root">
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <div class="drawer">
+      <div class="drawer-head"><h3 id="drawer-title">سلة المشتريات</h3><button class="icon-btn" id="drawer-close">✕</button></div>
+      <div class="drawer-body" id="cart-items"></div>
+      <div class="drawer-body" id="wishlist-items" style="display:none"></div>
+      <div class="drawer-foot" id="cart-foot"></div>
+    </div>
+  </div>
+
+  <div class="modal-root" id="offer-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close">✕</button>
+      <img id="offer-img" src="assets/images/photo-1445116572660-236099ec97a0.jpg" alt="">
+      <div class="modal-content">
+        <h3 id="offer-modal-title"></h3>
+        <p id="offer-modal-desc"></p>
+        <div id="offer-modal-details" style="color:var(--muted);margin-bottom:18px"></div>
+        <div class="offer-price" id="offer-modal-price" style="font-size:1.4rem;font-weight:800;color:var(--caramel-dark);margin-bottom:20px"></div>
+        <button class="btn btn-accent btn-block" id="offer-add"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-stack" id="toast-stack"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
